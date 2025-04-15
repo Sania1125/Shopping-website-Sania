@@ -1,0 +1,40 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# === VS Code ===
+.vscode/
+*.code-workspace
+
+# === OS Generated Files ===
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# === Logs and Temp Files ===
+*.log
+*.tmp
+*.bak
+*.swp
+
+# === Node / JS (If added later) ===
+node_modules/
+npm-debug.log*
+
+# === HTML/CSS Cache (Optional) ===
+*.sass-cache/
+.cache/
+
+# === Virtual environments ===
+venv/
+env/
+ENV/
+
+# === Git Ignore Self-Note ===
+.gitignore
