@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Fashion Store | By Sania Irshad</title>
+  <title>Fashion Mall | By Sania Irshad</title>
   <style>
     * {
       box-sizing: border-box;
@@ -12,19 +12,21 @@
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background-color: #f5f5f5;
+      color: #333;
     }
 
     header {
-      background-color: #3a3a3a;
+      background-color: #2c2c2c;
       color: white;
       padding: 20px 0;
       text-align: center;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 
     header h1 {
       margin: 0;
-      font-size: 2rem;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
     }
 
     nav {
@@ -32,10 +34,10 @@
     }
 
     nav a {
-      color: #ffd700;
+      color: #ffdd57;
       text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
+      margin: 0 20px;
+      font-weight: 600;
     }
 
     nav a:hover {
@@ -43,72 +45,72 @@
     }
 
     main {
-      padding: 30px 20px;
+      padding: 40px 20px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
+      gap: 30px;
     }
 
     .product {
-      background-color: #444;
-      color: white;
-      padding: 20px;
-      width: 260px;
-      border-radius: 12px;
-      position: relative;
-      text-align: center;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 280px;
       transition: transform 0.3s;
+      text-align: center;
     }
 
     .product:hover {
       transform: scale(1.03);
     }
 
-    .product .hover-text {
-      visibility: hidden;
-      background-color: #222;
-      color: #ffd700;
-      text-align: center;
-      border-radius: 5px;
-      padding: 5px;
-      position: absolute;
-      bottom: 100%;
-      left: 50%;
-      transform: translateX(-50%);
-      white-space: nowrap;
-    }
-
-    .product:hover .hover-text {
-      visibility: visible;
-    }
-
     .product img {
       width: 100%;
-      border-radius: 8px;
-      margin-bottom: 15px;
+      height: 360px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .product:hover img {
+      transform: scale(1.05);
+    }
+
+    .product-info {
+      padding: 20px;
+    }
+
+    .product-info h3 {
+      margin-bottom: 10px;
+      font-size: 1.4rem;
+    }
+
+    .product-info p {
+      margin: 5px 0;
+      font-size: 1rem;
+      color: #555;
     }
 
     .buy-button {
-      background-color: #974cf3;
-      color: #fff;
+      background-color: #a64bf4;
+      color: white;
       padding: 10px 20px;
       border: none;
-      border-radius: 8px;
+      border-radius: 6px;
       font-size: 1rem;
       cursor: pointer;
-      margin-top: 10px;
+      margin-top: 15px;
       transition: background 0.3s;
     }
 
     .buy-button:hover {
-      background-color: #7a38d6;
+      background-color: #7b38c9;
     }
 
     footer {
       text-align: center;
-      background-color: #2e2e2e;
+      background-color: #2c2c2c;
       color: #ccc;
       padding: 20px;
       margin-top: 40px;
@@ -126,10 +128,9 @@
       }
     }
   </style>
-
   <script>
     function showUnderDevelopmentMessage() {
-      alert("🛍️ This feature is under development. Stay tuned!");
+      alert("🛍️ This feature is under development. Thank you for visiting!");
     }
   </script>
 </head>
@@ -137,7 +138,7 @@
 <body>
 
   <header>
-    <h1>Fashion Store</h1>
+    <h1>Fashion Mall</h1>
     <nav>
       <a href="#">Home</a>
       <a href="#">Shop</a>
@@ -148,35 +149,38 @@
 
   <main>
     <div class="product">
-      <span class="hover-text">$300</span>
-      <img src="https://via.placeholder.com/250x300.png?text=Girl's+Dress" alt="Girl's Dress">
-      <h3>Girl's Dress</h3>
-      <p>Price: $300</p>
-      <p>Fabric: Cotton</p>
-      <button class="buy-button" onclick="showUnderDevelopmentMessage()">Buy Now</button>
+      <img src="https://images.unsplash.com/photo-1583002805878-690f1d21b9f9?auto=format&fit=crop&w=700&q=80" alt="Stylish Girl Dress">
+      <div class="product-info">
+        <h3>Elegant Girl's Dress</h3>
+        <p>Price: $300</p>
+        <p>Fabric: Cotton</p>
+        <button class="buy-button" onclick="showUnderDevelopmentMessage()">Buy Now</button>
+      </div>
     </div>
 
     <div class="product">
-      <span class="hover-text">$350</span>
-      <img src="https://via.placeholder.com/250x300.png?text=Girl's+Skirt" alt="Girl's Skirt">
-      <h3>Girl's Skirt</h3>
-      <p>Price: $350</p>
-      <p>Fabric: Silk</p>
-      <button class="buy-button" onclick="showUnderDevelopmentMessage()">Buy Now</button>
+      <img src="https://images.unsplash.com/photo-1542060749-8f48e8a1ba6d?auto=format&fit=crop&w=700&q=80" alt="Skirt">
+      <div class="product-info">
+        <h3>Summer Skirt</h3>
+        <p>Price: $350</p>
+        <p>Fabric: Silk</p>
+        <button class="buy-button" onclick="showUnderDevelopmentMessage()">Buy Now</button>
+      </div>
     </div>
 
     <div class="product">
-      <span class="hover-text">$200</span>
-      <img src="https://via.placeholder.com/250x300.png?text=Flare+Skirt" alt="Girl's Flare Skirt">
-      <h3>Flare Skirt</h3>
-      <p>Price: $200</p>
-      <p>Fabric: Chiffon</p>
-      <button class="buy-button" onclick="showUnderDevelopmentMessage()">Buy Now</button>
+      <img src="https://images.unsplash.com/photo-1617582278444-8b891ba318b5?auto=format&fit=crop&w=700&q=80" alt="Flare Skirt">
+      <div class="product-info">
+        <h3>Classic Flare Skirt</h3>
+        <p>Price: $200</p>
+        <p>Fabric: Chiffon</p>
+        <button class="buy-button" onclick="showUnderDevelopmentMessage()">Buy Now</button>
+      </div>
     </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 Fashion Store. All rights reserved.</p>
+    <p>&copy; 2025 Fashion Mall. All rights reserved.</p>
   </footer>
 
 </body>
